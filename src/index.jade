@@ -1,0 +1,221 @@
+extends _layout.jade
+
+block header
+    #header
+        .countainer.clearfix
+            .log
+                img(src="http://lorempixel.com/112/100/", alt="none")
+            .nav
+                ul.clearfix
+                    li.active
+                        a(href="#") HOME+
+                    li
+                        a(href="#") PAGES+
+                    li 
+                        a(href="#") FEATURES+
+                    li 
+                        a(href="#") PORTFOLIO+
+                    li
+                        a(href="#") BLOG+
+                    li 
+                        a(href="#") SHORTCODES+
+                    li 
+                        a(href="#") SHOP+
+                    li.bundery 
+                        span<i class="fas fa-shopping-cart"></i>
+                        a(href="#") CART(2)+
+                        
+                    li 
+                        span<i class="fas fa-search"></i>
+                        a(href="#") SEARCH+
+block content   
+    #content
+        .slider
+            img(src="http://lorempixel.com/1920/1080/", alt="none")
+    
+        .categories
+            .countainer
+                .row.clearfix
+                    .col-6.category
+                        a(href="#")
+                            img(src="http://lorempixel.com/575/265/", alt="none")
+                            span.title OUTDOOR <br>LIGHTING
+                    .col-6.category
+                        a(href="#")
+                            img(src="http://lorempixel.com/575/265/", alt="none")
+                            span.title.light WOODEM <br>FLOORING
+                    .col-4.category
+                        a(href="#")
+                            img(src="http://lorempixel.com/379/265/", alt="none")
+                            span.title LIVING <br>AREA
+                    .col-4.category
+                        a(href="#")
+                            img(src="http://lorempixel.com/379/265/", alt="none")
+                            span.title.light BATHROOM <br>FITTINGS
+                    .col-4.category
+                        a(href="#")
+                            img(src="http://lorempixel.com/379/265/", alt="none")
+                            span.title TOOLS &amp;<br> EQUIPMENT
+    
+        .recent_product
+            .countainer
+                .intro
+                    h2 recent product
+                    hr
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nesciunt!
+                //增加row 是為了把左右padding拉回去
+                .products.row.clearfix
+                    ul
+                        li.col-4.product
+                            .thumbnail
+                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               .cover
+                                a(href="http://")<i class="fas fa-search"></i>
+                            .info
+                                h3.title 
+                                    a(href="#") persoiciatis unde omnis
+                                .price $39,99
+                           
+                        li.col-4.product
+                            .thumbnail
+                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               .cover
+                                a(href="http://")<i class="fas fa-search"></i>
+                            .info
+                                h3.title 
+                                    a(href="#") persoiciatis unde omnis
+                                .price $39,99
+                        li.col-4.product
+                           .thumbnail
+                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               .cover
+                                a(href="http://")<i class="fas fa-search"></i>
+                            .info
+                                h3.title 
+                                    a(href="#") persoiciatis unde omnis
+                                .price $39,99
+                        li.col-4.product
+                            .thumbnail
+                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               .cover
+                                a(href="http://")<i class="fas fa-search"></i>
+                            .info
+                                h3.title 
+                                    a(href="#") persoiciatis unde omnis
+                                .price $39,99
+                        li.col-4.product
+                            .thumbnail
+                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               .cover
+                                a(href="http://")<i class="fas fa-search"></i>
+                            .info
+                                h3.title 
+                                    a(href="#") persoiciatis unde omnis
+                                .price $39,99
+                        li.col-4.product
+                            .thumbnail
+                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               .cover
+                                a(href="http://")<i class="fas fa-search"></i>
+                            .info
+                                h3.title 
+                                    a(href="#") persoiciatis unde omnis
+                                .price $39,99
+
+
+        .event
+            .countainer
+                h1.title 30% DISCOUNT
+                h3.subtitle FOR THIS SUMMER ONLY
+                a(href="#").button SHOP NOW
+
+        .feature
+            .countainer.clearfix
+                .col-6
+                    img(src="http://lorempixel.com/525/453/", alt="none")
+                .col-6.info
+                    .title feature item
+                    h3.name antic single sofa
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique dolor suscipit perspiciatis 
+                    .price $240
+                    a(href="#").button.border buy now
+        hr
+        .outlets
+            .countainer
+                .intro
+                    h2 outlets
+                    hr
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere eligendi mollitia.
+                .row.clearfix
+                    .col-4.outlet
+                        h3 sydney
+                        .info
+                            .addres Lorem ipsum dolor sit amet consectetur
+                            .phone    
+                                label phone:
+                                    a(href="tel:+62-500-800-123") +62 500 800 123
+                            .emall
+                                label email:
+                                    a(href="mailto:example@gamil.com") example@gamil.com
+                            .map
+                                span<i class="fas fa-map-marker-alt"></i>
+                                a(href="#" target="_blank") view map
+                    .col-4.outlet            
+                        h3 sydney
+                        .info
+                            .addres Lorem ipsum dolor sit amet consectetur 
+                            .phone    
+                                label phone:
+                                    a(href="tel:+62-500-800-123") +62 500 800 123
+                            .emall
+                                label email:
+                                    a(href="mailto:example@gamil.com") example@gamil.com
+                            .map
+                                span<i class="fas fa-map-marker-alt"></i>
+                                a(href="#" target="_blank") view map
+                    .col-4.outlet            
+                        h3 sydney
+                        .info
+                            .addres Lorem ipsum dolor sit amet consectetur 
+                            .phone    
+                                label phone:
+                                    a(href="tel:+62-500-800-123") +62 500 800 123
+                            .emall
+                                label email:
+                                    a(href="mailto:example@gamil.com") example@gamil.com
+                            .map
+                                span<i class="fas fa-map-marker-alt"></i>
+                                a(href="#" target="_blank") view map 
+ 
+block footer  
+    #footer
+        .countainer.clearfix
+            .logo
+                img(src="http://lorempixel.com/57/52/", alt="none")
+            .copyright
+                .title &copy; massive 2014.
+                .subtitle buldng site with lots of fun
+            .social-media
+                ul
+                    li
+                        a(href="#") 
+                            span <i class="fab fa-facebook-f"></i>
+                    li
+                        a(href="#")
+                            span<i class="fab fa-twitter"></i>
+                    li
+                        a(href="#")
+                            span<i class="fab fa-dribbble"></i>
+                    li
+                        a(href="#")
+                            span<i class="fab fa-google-plus-g"></i>
+                    li
+                        a(href="#")
+                            span<i class="fab fa-behance"></i>
+    #go-top 
+        a(href="#header")
+            span<i class="fas fa-angle-up"></i>
+        
+            
+    
+
