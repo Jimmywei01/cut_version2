@@ -82,7 +82,7 @@
 .progress-bar {
     margin-bottom: 50px;
     width: 100%;
-    background-color: #eae8e8;
+    background-color: $white-second;
     >div {
         display: inline-block;
     }
@@ -103,7 +103,7 @@
         border-radius: 14px;
         color: $white-first;
         >div {
-            @include triangle(10px, #666, bottom);
+            @include triangle(10px, $gray-fourth, bottom);
             position: absolute;
             right: 20px;
         }

@@ -32,3 +32,15 @@ bower install
 gulp bower
 ```
 
+index.html
+// header
+// content
+// who
+// feature
+// team
+// member
+// gray
+// clint
+// footer
+// dark
+// #go-top 
