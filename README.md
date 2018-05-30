@@ -1,4 +1,4 @@
-# cut_version1 - pratice
+# cut_version2 - pratice
 
 ## 1. HTML ＆ CSS - 切版
 ## 2. Font Awesome - svg icon 載入
