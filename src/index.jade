@@ -2,14 +2,14 @@ extends _layout.jade
 
 block header
     #header
-        .full-with.countainer.clearfix
+        .full-width.clearfix
             .log
                 img(src="http://lorempixel.com/112/100/", alt="none")
             .nav
                 ul.clearfix
-                    li.active
-                        a(href="#") HOME+
                     li
+                        a(href="#") HOME+
+                    li.active
                         a(href="#") PAGES+
                     li 
                         a(href="#") FEATURES+
@@ -30,254 +30,273 @@ block header
                         a(href="#") SEARCH+
 block content   
     #content
-        .header
-            h1.title about us
-            ul
-                li
-                    a(href="") home
-                li
-                    a(href="") pages
-                li
-                    a(href="") about us
-        .slider
-            img(src="http://lorempixel.com/1920/1080/", alt="none")
+        .back
+            .header.countainer
+                h1.title about us
+                ul.breadcrumbs
+                    li
+                        a(href="") home
+                    li
+                        a(href="") pages
+                    li.about
+                        a about us
     
         .categories
             .countainer
-                .row.clearfix
-                    .col-6
-                        a(href="#")
-                            img(src="http://lorempixel.com/510/404/", alt="none")
-                    .col-6
-                        h3.title welcome to massive
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis soluta perferendis? Consequatur earum ut magnam obcaecati in architecto odit minima velit totam, non quam, atque numquam odio cum adipisci impedit id vel iusto eligendi sed, fugiat consectetur quasi molestiae! Molestias voluptate iusto vitae reprehenderit et, soluta inventore unde ex quibusdam earum nesciunt. Veritatis saepe dolorum placeat sit porro unde at quos nobis quam. Ex atque deserunt quas iusto soluta? Earum perspiciatis corrupti, dolore nam ratione culpa sint ipsum veritatis, ad, officia ut? Temporibus eveniet debitis quibusdam harum rerum voluptatibus itaque, repellat magni architecto amet optio placeat sint aliquam laudantium.
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit, accusantium corrupti, suscipit ipsam consectetur, aut magni mollitia consequatur pariatur commodi libero sequi! Unde.
-                .who
+                .mission.clearfix
                     .row
                         .col-6
-                          h3.title welcome to massive
+                            a(href="#")
+                                img(src="http://lorempixel.com/510/404/", alt="none")
+                        .col-6
+                            h3.title welcome to massive
+                            p i in quibusdam earum nesciunt. Veritatis saepe dolorum placeat sit porro unde at quos nobis quam. Ex atque deserunt quas iusto soluta? Earum perspiciatis corrupti, dolore nam ratione culpa sint ipsum veritatis, ad, officia ut? Temporibus eveniet debitis quibusdam harum rerum voluptatibus itaque, repellat magni architecto amet optio placeat sint aliquam laudantium.
+                            p accusantium corrupti, suscipit ipsam consectetur, aut magni mollitia consequatur pariatur commodi libero sequi! Unde.
+                .who.clearfix
+                    .row
+                        .col-6
+                          h3.title who we are
                           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis soluta perferendis? Consequatur earum ut magnam obcaecati in architecto odit minima velit totam, non quam, atque numquam odio cum adipisci impedit id vel iusto eligendi sed, fugiat consectetur quasi molestiae! Molestias voluptate iusto vitae reprehenderit et, soluta inventore unde ex quibusdam earum nesciunt. Veritatis saepe dolorum placeat sit porro unde at quos nobis quam. Ex atque deserunt quas iusto soluta? Earum perspiciatis corrupti, dolore nam ratione culpa sint ipsum veritatis, ad, officia ut? Temporibus eveniet debitis quibusdam harum rerum voluptatibus itaque, repellat magni architecto amet optio placeat sint aliquam laudantium.
                         .col-6
                           h3.title massive skills
-                           .progress-bar
+                          .progress-bar
                             .progress(style = 'width:80%') HTML/CSS/JQUERY
                             .pin 80%
+                                .triangle
 
-                           .progress-bar
+                          .progress-bar
                             .progress(style = 'width:90%') photoshop
                             .pin 90%
-
-                           .progress-bar
+                                .triangle
+                          .progress-bar
                             .progress(style = 'width:75%') graphic design
                             .pin 75%
-
+                                .triangle
                            .progress-bar
                             .progress(style = 'width:82%') php/wordpress
                             .pin 82%
+                                .triangle
         .feature
-            .countainer
-                .row
+            .countainer.clearfix
+                .row.clearfix
                     .col-4
-                        span
-                        h3 creative design
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem velit officiis?
+                        span <i class="far fa-lightbulb"></i>
+                        .part
+                            h3 creative design
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem velit officiis?
 
                     .col-4
-                        span
-                        h3 creative design
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem velit officiis?
+                        span <i class="far fa-newspaper"></i>
+                        .part
+                            h3 creative design
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem velit officiis?
 
                     .col-4
-                        span
-                        h3 creative design
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem velit officiis?
+                        span <i class="fas fa-laptop"></i>
+                        .part
+                            h3 creative design
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem velit officiis?
 
-            .team
+        .team
                 .countainer
-                    h2.title we have a fabulous team
-                    p.subtitle Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                .members
-                    ul.row
+                    .introTitle
+                        h2.title we have a fabulous team
+                        p.subtitle Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                .members.clearfix
+                   .countainer
+                    ul.row.clearfix
                         li.col-4.member
                             .thumbnail
-                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               img(src="http://lorempixel.com/330/330/", alt="none")
                                .cover
-                                h2 i love desing
-                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                .social-media
-                                    ul
-                                        li
-                                            a(href="http://") f
-                                        li
-                                            a(href="http://") t
-                                        li
-                                            a(href="http://") g
+                                    h3 i love desing
+                                    p  sit amet consectetur adipisicing elit.
+                                    .social-media
+                                        ul.clearfix
+                                            li
+                                                a(href="#") 
+                                                    span <i class="fab fa-facebook-f"></i>
+                                            li
+                                                a(href="#") 
+                                                    span<i class="fab fa-twitter"></i>
+                                            li
+                                                a(href="#")  
+                                                    span<i class="fab fa-google-plus-g"></i>
                             .info
                                 h3.name martin smith
                                 .title founder &amp; ceo
-
                         li.col-4.member
                             .thumbnail
-                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               img(src="http://lorempixel.com/330/330/", alt="none")
                                .cover
-                                h2 i love desing
-                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                .social-media
-                                    ul
-                                        li
-                                            a(href="http://") f
-                                        li
-                                            a(href="http://") t
-                                        li
-                                            a(href="http://") g
+                                    h3 i love desing
+                                    p  sit amet consectetur adipisicing elit.
+                                    .social-media
+                                        ul.clearfix
+                                            li
+                                                a(href="#") 
+                                                    span <i class="fab fa-facebook-f"></i>
+                                            li
+                                                a(href="#") 
+                                                    span<i class="fab fa-twitter"></i>
+                                            li
+                                                a(href="#")  
+                                                    span<i class="fab fa-google-plus-g"></i>
                             .info
-                                h3.name franklin harbet
-                                .title hr manager
-
+                                h3.name martin smith
+                                .title founder &amp; ceo
                         li.col-4.member
                             .thumbnail
-                               img(src="http://lorempixel.com/370/277/", alt="none")
+                               img(src="http://lorempixel.com/330/330/", alt="none")
                                .cover
-                                h2 i love desing
-                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                .social-media
-                                    ul
-                                        li
-                                            a(href="http://") f
-                                        li
-                                            a(href="http://") t
-                                        li
-                                            a(href="http://") g
+                                    h3 i love desing
+                                    p  sit amet consectetur adipisicing elit.
+                                    .social-media
+                                        ul.clearfix
+                                            li
+                                                a(href="#") 
+                                                    span <i class="fab fa-facebook-f"></i>
+                                            li
+                                                a(href="#") 
+                                                    span<i class="fab fa-twitter"></i>
+                                            li
+                                                a(href="#")  
+                                                    span<i class="fab fa-google-plus-g"></i>
                             .info
-                                h3.name linda amderson
-                                .title marketing manager
+                                h3.name martin smith
+                                .title founder &amp; ceo
+                        
 
         .gray
             .countainer
                 .row
                     .col-3
-                        span
+                        span<i class="far fa-file-alt"></i>
                         .count 36
                         h4 html multipage
                     .col-3
-                        span
+                        span<i class="fas fa-desktop"></i>
                         .count 36
                         h4 html multipage
                     .col-3
-                        span
+                        span<i class="fas fa-database"></i>
                         .count 36
                         h4 html multipage
                     .col-3
-                        span
+                        span<i class="fas fa-chart-line"></i>
                         .count 36
                         h4 html multipage 
 
         .clint
             .countainer
-                h3.title our happy clients
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eaque.
-                .row
+                .introTitle
+                    h2.title our happy clients
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eaque.
+                .row.clearfix
                     .col-2
-                        a(href="http://lorempixel.com/145/111/" alt='none')
+                        img(src="http://lorempixel.com/145/111/", alt="none")
                     .col-2
-                        a(href="http://lorempixel.com/145/111/" alt='none')
+                        img(src="http://lorempixel.com/145/111/", alt="none")
                     .col-2
-                        a(href="http://lorempixel.com/145/111/" alt='none')
+                        img(src="http://lorempixel.com/145/111/", alt="none")
                     .col-2
-                        a(href="http://lorempixel.com/145/111/" alt='none')
+                        img(src="http://lorempixel.com/145/111/", alt="none")
                     .col-2
-                        a(href="http://lorempixel.com/145/111/" alt='none')
+                        img(src="http://lorempixel.com/145/111/", alt="none")
                     .col-2
-                        a(href="http://lorempixel.com/145/111/" alt='none')
+                        img(src="http://lorempixel.com/145/111/", alt="none")
  
 block footer  
-    #footer
-     .dark-gray
-        .countainer
-            .row
-                .col-3 
-                    .logo
-                        img(src="http://lorempixel.com/112/100/", alt="none")
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maxime laboriosam dolore natus doloremque distinctio?
-                .col-3
-                    h4.title recent posts
+    #footer.dark
+        .darkInfo
+            .countainer
+                .row.clearfix
+                    .col-3 
+                        .logo
+                            img(src="http://lorempixel.com/112/100/", alt="none")
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maxime laboriosam dolore natus doloremque distinctio?
+                    .col-3
+                        h4.title recent posts
+                        ul.comelist
+                            li
+                                a(href="http://") standard blog post
+                            li
+                                a(href="http://") quotation post
+                            li
+                                a(href="http://") audio post
+                            li
+                                a(href="http://") massive video demo
+                            li
+                                a(href="http://") blog image post
+
+                    .col-3
+                        h4.title quick link
+                        ul.comelist
+                            li
+                                a(href="http://") about massive
+                            li
+                                a(href="http://") career
+                            li
+                                a(href="http://") terms &amp; condition
+                            li
+                                a(href="http://") privacy policy
+                            li
+                                a(href="http://") contact us
+
+                    .col-3.recent-work
+                        h4.title recent work
+                        .thumbnails
+                        ul.clearfix
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+                            li
+                                a(href="http://")
+                                    img(src="http://lorempixel.com/55/55/", alt="none")
+
+
+        .darkBottom
+            .countainer.clearfix
+                .copyright
+                    .title Copyright 2012 - 2015 Massive Theme by <a href="#header">ThemeBucket </a>| All Rights Reserved
+                .social-media
                     ul
                         li
-                            a(href="http://") standard blog post
+                            a(href="#") 
+                                span <i class="fab fa-facebook-f"></i>
                         li
-                            a(href="http://") quotation post
+                            a(href="#")
+                                span<i class="fab fa-twitter"></i>
                         li
-                            a(href="http://") audio post
+                            a(href="#")
+                                span<i class="fab fa-dribbble"></i>
                         li
-                            a(href="http://") massive video demo
+                            a(href="#")
+                                span<i class="fab fa-google-plus-g"></i>
                         li
-                            a(href="http://") blog image post
-
-                 .col-3
-                    h4.title quick link
-                    ul
-                        li
-                            a(href="http://") about massive
-                        li
-                            a(href="http://") career
-                        li
-                            a(href="http://") terms &amp; condition
-                        li
-                            a(href="http://") privacy policy
-                        li
-                            a(href="http://") contact us
-
-                .col-3.recent-work
-                    h4.title recent work
-                    .thumbnails
-                    ul
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-                        li
-                            a(href="http://")
-                                img(src="http://lorempixel.com/55/55/", alt="none")
-
-
-     .black
-        .countainer.clearfix
-            .copyright
-                .title Copyright 2012 - 2015 Massive Theme by <a href="#header">ThemeBucket </a>| All Rights Reserved
-            .social-media
-                ul
-                    li
-                        a(href="#") 
-                            span <i class="fab fa-facebook-f"></i>
-                    li
-                        a(href="#")
-                            span<i class="fab fa-twitter"></i>
-                    li
-                        a(href="#")
-                            span<i class="fab fa-dribbble"></i>
-                    li
-                        a(href="#")
-                            span<i class="fab fa-google-plus-g"></i>
-                    li
-                        a(href="#")
-                            span<i class="fab fa-behance"></i>
+                            a(href="#")
+                                span<i class="fab fa-behance"></i>
+    
+    
+    
     #go-top 
         a(href="#header")
             span<i class="fas fa-angle-up"></i>

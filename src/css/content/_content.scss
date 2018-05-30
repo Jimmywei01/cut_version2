@@ -1,0 +1,276 @@
+.back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url("http://lorempixel.com/1920/1080/");
+}
+
+.header {
+    padding: 200px 0;
+    .title {
+        float: left;
+        text-transform: uppercase;
+        color: $white-first;
+        font-weight: normal;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+}
+.categories {
+    padding: 100px 0 80px 0;
+}
+.breadcrumbs {
+    padding: 15px;
+    float: right;
+    letter-spacing: 1px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    li {
+        float: left;
+        &::after {
+            content: '/';
+            margin: 0 5px;
+            color: $white-first;
+        }
+        &:last-child {
+            &::after {
+                content: "";
+                margin: 0;
+            }
+        }
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $gray-first;
+        }
+    }
+}
+
+.breadcrumbs .about a {
+    color: $white-first;
+}
+
+.mission {
+    padding-bottom: 100px;
+    .title {
+        margin: 0 0 30px 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    p {
+        margin: 0 0 30px 0;
+        color: $gray-first;
+        line-height: 2;
+    }
+}
+
+.who {
+    .title {
+        margin: 0 0 30px 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    p {
+        margin: 0 0 30px 0;
+        color: $gray-first;
+        line-height: 2;
+    }
+}
+
+.progress-bar {
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: #eae8e8;
+    >div {
+        display: inline-block;
+    }
+    .progress {
+        padding-left: 10px;
+        background-color: black;
+        color: $white-first;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 24px;
+    }
+    .pin {
+        position: relative;
+        top: -35px;
+        left: -35px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 3px 8px;
+        border-radius: 14px;
+        color: $white-first;
+        >div {
+            @include triangle(10px, #666, bottom);
+            position: absolute;
+            right: 20px;
+        }
+    }
+}
+
+//feature
+.feature {
+    padding: 100px 0;
+    background-image: url("http://lorempixel.com/1920/1080/");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    .row {
+        text-align: center;
+    }
+}
+
+.feature .row {
+    i {
+        display: block;
+        font-size: 36px;
+        color: $yellow-first;
+        padding-bottom: 30px;
+    }
+    h3 {
+        margin: 0 0 30px 0;
+        color: $white-first;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+    p {
+        margin: 0;
+        color: $white-first;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+}
+
+//team
+.introTitle {
+    padding: 100px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    h2 {
+        font-weight: normal;
+    }
+    p {
+        color: $gray-first;
+    }
+}
+
+.members {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.member {
+    padding: 0 30px;
+    .info {
+        padding: 20px 0;
+        text-align: left;
+        h3 {
+            margin: 0;
+            font-weight: normal;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .title {
+            margin: 0;
+            letter-spacing: 1px;
+            font-size: 12px;
+            color: $gray-second;
+            line-height: 2;
+        }
+    }
+}
+
+.thumbnail .cover {
+    h3 {
+        margin: 30px 0;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    p {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 2;
+    }
+}
+
+.thumbnail .social-media {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    ul {
+        display: inline-block;
+        li {
+            float: left;
+            margin: 0 30px 30px 0;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//放大鏡遮罩部分
+.thumbnail {
+    position: relative;
+    .cover {
+        position: absolute;
+        padding: 0 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border: 20px solid rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+}
+
+.thumbnail .cover:hover {
+    opacity: 1;
+}
+
+// gray
+.gray {
+    margin-top: 100px;
+    padding: 100px 0;
+    display: inline-block;
+    width: 100%;
+    background-color: $white-first;
+    text-align: center;
+    i {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+    .count {
+        font-size: 36px;
+        line-height: 1.5;
+    }
+    h4 {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: $black-third;
+        font-size: 15px;
+    }
+}
+
+// clint
+.clint .row {
+    padding-bottom: 100px;
+    img {
+        margin: auto;
+    }
+}

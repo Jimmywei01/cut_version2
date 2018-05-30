@@ -13,9 +13,19 @@
     height: image-height("./src/images/#{$img}"); 
 }   
 
+// col 分割欄位
+// 分割 3 欄位
+// .col-4 { @include col(left, 3, 0, 10px);}
+@mixin col($float, $number, $tb ,$lr) {
+  float: $float;
+  padding: $tb $lr;
+  width: 100%/$number;
+  overflow: hidden;
+}
+
 //三角形產生器 預設是等腰三角形，如要做正三角形，請將type預設變數改為0.8666666 
-//右上角的，就打：+triangle(30px, red, right-top) 左下角的就打：+triangle(30px, red, left-bottom)
-@mixin triangle($size, $color, $align,$type:1){
+//右上角的，就打：@include triangle(30px, red, right-top) 左下角的就打：@include triangle(30px, red, left-bottom)
+@mixin triangle($size, $color, $align, $type:1) {
   height: 0;
   width: 0;
   @if ($align == top){
@@ -57,3 +67,5 @@
   }
 }
   
+
+

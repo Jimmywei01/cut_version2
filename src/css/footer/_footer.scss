@@ -1,0 +1,110 @@
+.dark {
+    padding: 0;
+    background-color: $black-second;
+    img {
+        margin-bottom: 20px;
+    }
+    .darkInfo {
+        padding: 80px 0;
+    }
+    .darkBottom {
+        display: inline-block;
+        width: 100%;
+        background-color: $black-first;
+    }
+}
+
+.darkInfo {
+    p{
+         color: $black-fifth;
+    }
+    h4 {
+        text-transform: uppercase;
+        color: $white;
+        font-weight: normal;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+}
+
+ul.comelist {
+    li {
+        border-bottom: 1px solid $black-fourth;
+    }
+    a {
+        display: block;
+        color: $black-fifth;
+        line-height: 45px;
+        text-decoration: none;
+        text-transform: capitalize;
+        &::before {
+            content: ">";
+            margin-right: 10px;
+        }
+    }
+}
+
+.dark .recent-work {
+    img {
+        float: left;
+        margin: 0 10px 10px 0;
+        width: 25%;
+    }
+}
+
+.darkBottom {
+    padding: 35px 0;
+}
+
+.darkBottom .copyright {
+    float: left;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $black-fifth;
+    font-weight: normal;
+    font-size: 15px;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.darkBottom .social-media {
+    float: right;
+    li {
+        float: left;
+    }
+}
+
+.darkBottom .social-media a {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: $black-fifth;
+    border: 1px solid $black-fifth;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 15px 0 0;
+    padding-bottom: 2px;
+    &:hover {
+        color: $white-first;
+        background: $black-fifth;
+    }
+}
+
+#go-top a {
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    color: $white;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
